@@ -16,5 +16,18 @@
             this.age = age;
         }
     }
-    // your code here
+    const run = document.getElementById("run") 
+
+    run.addEventListener("click",function(){
+
+
+        const chat1 = new Cat("skitty","9ans")
+        console.log(chat1)
+        const chat2 = new Cat("pixel","6ans")
+        console.log(chat2)
+
+
+
+
+    })
 })();

@@ -10,6 +10,12 @@
 // You will have time to focus on it later.
 
 (() => {
+    var button = document.getElementById("run");
+
+
+
+
+
     const fruits = [
         "pomme",
         "poire",
@@ -24,6 +30,14 @@
         "raisin",
         "cerise",
     ];
+
+
+    button.addEventListener("click",function(){
+
+alert(fruits[3])
+
+    })
+
 
     // your code here
 })();

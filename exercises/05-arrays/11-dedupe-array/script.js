@@ -27,5 +27,16 @@
         "cerise",
     ];
 
-    // your code here
+    var button = document.getElementById("run");
+
+    button.addEventListener("click",function(){
+
+        
+        let nouveaufruit = [...new Set(fruits)];
+        console.log(nouveaufruit)
+
+       
+      
+      
+     })
 })();

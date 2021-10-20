@@ -10,5 +10,62 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+ 
+    class Person {
+        constructor(firstname,lastname){
+            this.firstname = firstname
+            this.lastname = lastname
+        }
+
+
+       /*  get fullname(){
+           return this.firstname + this.lastname
+        }
+
+        set fullname(val) {
+
+            
+            const names = val.split(" ");
+            this.firstname = names[0];
+            this.lastname = names[1];
+
+
+
+        } */
+
+        get fullName() {
+            return this.firstname + this.lastname
+        }
+         set fullName(space) {
+            const parts = space.split(' ');
+            this.firstname = parts[0];
+            this.lastname = parts[1];
+        } 
+
+    }
+
+    const run = document.getElementById("run") ;
+
+    run.addEventListener("click",function(){
+
+
+        const Boris = new Person("elfamoso","Borisu")
+        console.log(Boris.firstname)
+        console.log(Boris.lastname)
+        console.log(Boris.fullName)
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();

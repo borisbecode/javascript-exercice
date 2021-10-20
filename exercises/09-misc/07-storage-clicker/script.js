@@ -10,5 +10,32 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var target = document.getElementById("target")
+    var button = document.getElementById("increment")
+   
+    target.textContent = "Tu as cliqué  " + localStorage.clickcount + " fois"
+    
+
+
+    button.addEventListener("click",function(){
+
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        
+        target.textContent = "Tu as cliqué  " + localStorage.clickcount + " fois"
+
+
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
 })();

@@ -10,6 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
+    var button = document.getElementById("run");
+
+
+
+
     const fruits = [
         "pomme",
         "poire",
@@ -22,6 +27,15 @@
         "raisin",
         "cerise",
     ];
+
+    var enleve = fruits.splice(0,1,"banane")
+    enleve = fruits.splice(-1,1,"kiwi")
+    
+    button.addEventListener("click",function(){
+
+        alert(fruits)
+        
+            })
 
     // your code here
 })();

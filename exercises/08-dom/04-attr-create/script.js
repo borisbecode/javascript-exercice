@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+   var source = document.getElementById("source").getAttribute("data-image") ;
+    
+   
+
+
+    
+    var img = document.createElement("img");
+    img.src = source ;
+    var target = document.getElementById("target") ;
+    target.appendChild(img);
+   
+   
+
 })();

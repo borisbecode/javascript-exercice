@@ -10,5 +10,31 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let pass = document.getElementById('pass-one');
+    let count = document.getElementById('validity');
+   
+   
+
+  
+    pass.addEventListener('input', () => {
+
+        var reg = new RegExp("^(?=(.*[a-zA-Z]){1,})(?=(.*[0-9]){2,}).{8,64}$");
+      
+      if(pass.value.match(reg)){
+        count.textContent = "ok"
+
+      }
+      else{
+
+        count.textContent = "Pas ok"
+      }
+      
+      
+      
+      
+      
+      
+        /* count.innerText = `${pass.value.length}/${maxLength}`; */
+    })
+
 })();

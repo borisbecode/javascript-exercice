@@ -88,5 +88,15 @@
         },
     ];
 
-    // your code here
+    var button = document.getElementById("run");
+
+    button.addEventListener("click",function(){
+
+      for(i = 0 ; i <= people.length ; i++){
+          console.log(people[8].email)
+          console.log[i]
+      }
+        
+      
+     })
 })();

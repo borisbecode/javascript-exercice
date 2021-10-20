@@ -22,5 +22,27 @@
         "Lucas",
     ]);
 
-    // your code here
+   
+
+    var button = document.getElementById("run");
+
+    button.addEventListener("click",function(){
+
+        for( let value of people.values()){
+            console.log(value)
+
+
+
+
+        }
+
+        
+        console.log(people.has("Alexandre"))
+        console.log(people.size)
+
+
+       
+    })
+
+
 })();

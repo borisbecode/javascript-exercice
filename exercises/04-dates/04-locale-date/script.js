@@ -10,6 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    // your code here
+
+     
+    var cible = document.getElementById("target")
+    const jour = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"]
+    const mois = ["janvier","fevrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","decembre"]
+    
+    var d = new Date();
+    
+    var dayName = jour[d.getDay()];
+
+    var monthName = mois[d.getMonth()]
+
+
+  
+
+ 
+        
+   cible.textContent = "Nous sommes le " + dayName +" " + d.getDay() + " " + monthName + " " + d.getFullYear()
+ 
+
+
+
+
 })();

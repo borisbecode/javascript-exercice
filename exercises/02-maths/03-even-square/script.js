@@ -10,7 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
+    var i = 0
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+      
+        
+       
+            
+            for(var i=1;i<=21;i++){
+
+                if(i % 2 == 0){
+                alert(i*i)}
+            }
+            
+
+
+
+
+      
+        
     });
 })();

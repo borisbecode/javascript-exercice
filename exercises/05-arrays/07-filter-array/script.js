@@ -88,5 +88,14 @@
         },
     ];
 
-    // your code here
+    var button = document.getElementById("run");
+
+    button.addEventListener("click",function(){
+
+        const vieux = people.filter(element => element.age > 18)
+        vieux.forEach(element => console.log(element))
+
+      
+      
+     })
 })();

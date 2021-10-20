@@ -10,5 +10,37 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+   var target = document.getElementById("target")
+   /* tr>td*5 */
+  
+    var table = document.createElement("table")
+    
+    
+   /*  var tr = document.createElement("tr") */
+    /* il faut 10 tr  */
+    /* var td =document.createElement("td")
+ */
+
+    /* il faut 1 td dans chaque tr  */
+
+ 
+
+    for(i = 0 ; i <10 ; i++){
+        var tr = document.createElement("tr")
+        var td =document.createElement("td")
+        tr.appendChild(td)
+        table.appendChild(tr)
+
+
+    }
+
+
+   
+
+
+    target.appendChild(table)
+
+    
+    
+
 })();

@@ -10,5 +10,49 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var button = document.getElementById("run")
+
+
+
+
+
+
+    button.addEventListener("click",function(){
+
+
+        var pass1 = document.getElementById("pass-one")
+        var pass2 = document.getElementById("pass-two")
+
+        if(pass2.value == pass1.value ){
+
+           
+
+            pass2.style.border = "2px solid green";
+
+
+        }
+
+        else{
+           
+          
+
+            pass2.style.border = "2px solid red";
+            pass2.className = "error"
+            pass1.className = "error"
+
+        }
+
+
+
+
+
+
+
+
+
+    })
+
+
+
+
 })();

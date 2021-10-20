@@ -10,5 +10,43 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+   /*  var source = document.getElementsByTagName("img")[0].getAttribute("src") ; */
+    
+    var img = document.getElementsByTagName("img")[0];
+
+    var imghover = img.getAttribute("data-hover");
+
+  
+    console.log(img)
+  
+
+
+    img.addEventListener("mouseover",function(){
+
+
+
+           img.src = imghover ;
+
+
+
+
+ })
+
+
+
+   
+
+
+
+
+    
+    
+
+
+    
+
+  
+    
+
 })();

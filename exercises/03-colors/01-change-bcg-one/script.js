@@ -10,5 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+   var red = document.getElementById("red")
+   var green = document.getElementById("green")
+   var yellow = document.getElementById("yellow")
+   var blue = document.getElementById("blue")
+ 
+ 
+    
+
+    red.addEventListener("click", () => {
+        document.body.style.background = "red" ;
+     });
+     green.addEventListener("click", () => {
+        document.body.style.background = "green" ;
+     });
+
+     blue.addEventListener("click", () => {
+        document.body.style.background = "blue" ;
+     });
+
+     yellow.addEventListener("click", () => {
+        document.body.style.background = "yellow" ;
+     });
+
+
+
+
 })();

@@ -10,5 +10,51 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    
+    var cible = document.getElementById("run") ;
+  
+    
+    
+
+
+        
+
+        cible.addEventListener("click",function(){
+
+
+            var year = document.getElementById("year").value
+
+            for(i = 0 ; i < 12 ; i++ ){
+
+                var année13 = new Date(year,i,13);
+                const mois = ["janvier","fevrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","decembre"]
+                var mois13;
+                if(année13.getDay() === 5){
+                    mois13 = mois[i];
+                    alert(mois13);
+                }
+
+            }
+          
+        })
+
+
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();

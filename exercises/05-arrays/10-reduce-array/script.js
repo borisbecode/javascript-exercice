@@ -88,5 +88,35 @@
         },
     ];
 
-    // your code here
+    var button = document.getElementById("run");
+
+    button.addEventListener("click",function(){ 
+
+        const vieux = people.filter(element => element.age)
+       vieux.forEach(element => console.log(element.age))
+
+       var somme = 0 
+       for(i=0 ; i< people.length ; i++){
+       
+
+        var somme = somme + vieux[i].age
+       
+        console.log(somme)
+      
+
+       }
+
+       
+
+     
+
+
+        
+      /*   const somme = (previousValue, currentValue) => previousValue + currentValue  ; 
+        console.log(vieux.reduce(somme)) */
+
+
+
+
+    })
 })();

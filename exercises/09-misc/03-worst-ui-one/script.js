@@ -10,5 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+   var target = document.getElementById("target")
+   var slider = document.getElementById("slider")
+
+  
+
+
+    var rangeSlider = document.getElementById("rs-range-line");
+    var rangeBullet = document.getElementById("rs-bullet");
+
+    slider.addEventListener("input", showSliderValue, false);
+
+    function showSliderValue() {
+  target.innerHTML = slider.value;
+  var bulletPosition = (rangeSlider.value /rangeSlider.max);
+  rangeBullet.style.left = (bulletPosition * 578) + "px";
+
+}
+
+
+/* https://codepen.io/mayuMPH/pen/ZjxGEY */
+
 })();

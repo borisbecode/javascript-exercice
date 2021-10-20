@@ -10,5 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var target = document.getElementById("target")
+    target.textContent = "owned"
+
 })();

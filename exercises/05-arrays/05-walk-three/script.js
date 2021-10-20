@@ -38,5 +38,16 @@
         },
     ];
 
-    // your code here
+    // your code herevar button = document.getElementById("run");
+
+    var button = document.getElementById("run");
+
+    button.addEventListener("click",function(){
+        
+      for( let i of people ){
+          console.log(i.lastname)
+      }
+
+ 
+     })
 })();

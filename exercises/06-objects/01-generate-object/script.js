@@ -10,5 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var personne = {
+        nom: "lorenzonetto",
+        prenom: "boris",
+        age: 29,
+        sexe: "masculin",
+        ville: "bruxelles",
+        pays:"belgique",
+      };
+     
+      var run = document.getElementById("run")
+
+      run.addEventListener("click",function(){
+
+
+
+        console.log(personne)
+
+
+      })
+
 })();

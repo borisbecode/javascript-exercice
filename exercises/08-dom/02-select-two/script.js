@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    
+
+var target = document.getElementsByClassName("target")[0]
+
+
+target.textContent = "moustique"
+
+
+
+
+
+
+
+
+
+
+
+
 })();

@@ -10,5 +10,8 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+ 
+ var utilisateur = prompt("hello , rentre ton prenom")
+ 
+ alert("bonjour " + utilisateur)
 })();

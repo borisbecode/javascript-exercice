@@ -10,5 +10,51 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+
+
+    var chiffre = Math.floor(Math.random() * 100) ;
+    console.log(chiffre)
+    
+
+
+    window.onload = function() { 
+
+
+    var proposition = prompt("Rentre un numéro , je te dirai s'il est plus grand ou plus petit que le numéro sélectionné") 
+
+
+    
+    while( parseInt(proposition) != chiffre) {
+
+        
+
+        if(parseInt(proposition) > chiffre ){
+
+            alert("c'est moins")
+        }
+        else{
+
+            alert("c'est plus")
+        }
+
+       var proposition = prompt("rentre un numéro")
+
+        
+
+    }
+
+    alert(" Bien joué , tu as gagné un voyage!")
+
+        
+    
+
+
+}
+
+
+
+
+
+
 })();

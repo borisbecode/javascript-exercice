@@ -10,5 +10,63 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var target = document.getElementById("target")
+
+ var t = target.textContent
+    
+
+    target.textContent = " "
+
+    for(i = 0 ; i < t.length ; i++){
+
+     
+
+        var span = document.createElement('span');
+        span.textContent = t.charAt(i);
+        
+        target.appendChild(span);
+
+
+        let x = 0 
+
+            while(x <= 16){
+                x = Math.round(Math.random()*70);
+
+               
+            }
+
+                span.setAttribute("style","font-size: "+ x + "px;")
+          
+      
+
+           
+            
+        
+        
+        
+     
+
+    }
+
+
+   
+
+
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();

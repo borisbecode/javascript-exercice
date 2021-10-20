@@ -18,5 +18,23 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    var button = document.getElementById("next")
+
+
+    i = 0
+    button.addEventListener("click", function () {
+
+        i = (i + 1) % gallery.length;
+        document.getElementsByTagName("img")[0].src = gallery[i]
+
+
+
+
+
+
+
+
+
+    })
+
 })();

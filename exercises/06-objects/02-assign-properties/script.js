@@ -26,5 +26,46 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    var button = document.getElementById("run")
+
+    button.addEventListener("click",function(){
+
+
+        for( i = 0 ; i < computers.length ; i++ ){
+            if(computers[i].available == null){
+
+                computers[i].available = defaultProps.available
+                computers[i].os = defaultProps.os
+                computers[i].user = defaultProps.user
+                
+            }
+
+            else{
+                computers[i].available = computers[i].available
+            }
+
+            
+        }
+
+
+        console.log(computers)
+
+
+
+
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();

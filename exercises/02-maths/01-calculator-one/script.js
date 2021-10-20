@@ -10,21 +10,24 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
+   var resultat = document.getElementById("resultat")
+   var chiffre1 =  document.getElementById("op-one")
+   var chiffre2 = document.getElementById("op-two")
 
     document.getElementById("addition").addEventListener("click", () => {
-        // perform an addition
+       resultat.textContent = parseInt(chiffre1.value) + parseInt(chiffre2.value)
     });
 
     document.getElementById("substraction").addEventListener("click", () => {
-        // perform an substraction
+        resultat.textContent = parseInt(chiffre1.value) - parseInt(chiffre2.value)
     });
 
     document.getElementById("multiplication").addEventListener("click", () => {
-        // perform an multiplication
+        resultat.textContent = parseInt(chiffre1.value) * parseInt(chiffre2.value)
     });
+   
 
     document.getElementById("division").addEventListener("click", () => {
-        // perform an division
+        resultat.textContent = parseInt(chiffre1.value) / parseInt(chiffre2.value)
     });
 })();

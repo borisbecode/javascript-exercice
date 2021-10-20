@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+ var gateau = prompt("veux tu du gateau? \n tu peux répondre par oui ou non")
+
+
+    if(gateau == "oui"){
+        alert("bravo sage décision!");
+    }
+    else{
+        alert("tu es fou ou quoi? pourquoi t'en privé?");
+    }
+
+
+
+
+
+ 
 })();

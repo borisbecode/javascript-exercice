@@ -13,6 +13,17 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        var chiffre = document.getElementById("number").value
+        function fact(){
+            var i, f = 1;
+          
+            for(i = 1; i <= chiffre; i++)  
+            {
+              f = f * i;   // ou f *= i;
+            }  
+            return f;
+          }
+          
+          alert(fact(chiffre));
     });
 })();

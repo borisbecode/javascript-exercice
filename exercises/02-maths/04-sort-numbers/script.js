@@ -11,8 +11,29 @@
 
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
+  
+    
+   
 
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+
+
+
+        var a = document.getElementById("numbers").value
+        var b = a.split(',').map(function(item) {
+            return parseInt(item, 10);
+        });
+        
+        
+        function compare(x, y) {
+            return x - y;
+        }
+
+
+        b.sort(compare);
+        alert(b);
+
+
+        
     });
 })();

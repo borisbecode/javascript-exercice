@@ -25,5 +25,17 @@
         "cerise",
     ];
 
+    
+    var button = document.getElementById("run");
+
+
+
+    button.addEventListener("click",function(){
+        
+       fruits.forEach(element => console.log(element));
+
+    })
+
+
     // your code here
 })();

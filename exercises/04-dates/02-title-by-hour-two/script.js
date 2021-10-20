@@ -10,6 +10,29 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    // your code here
+    var cible = document.getElementById("target")
+    var now = new Date()
+    var heure = now.getHours();
+    var minute  = now.getMinutes();
+
+ if(heure<=17 || heure == 17 && minute <= 30){
+
+   
+        cible.textContent = "bonjour"
+ }
+   
+  
+
+    else{
+        cible.textContent = "bonsoir"
+    }
+
+   
+
+
+
+
+     
+
+
 })();

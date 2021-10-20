@@ -25,5 +25,17 @@
         "cerise",
     ];
 
+    var button = document.getElementById("run");
+
+
+
+    button.addEventListener("click",function(){
+        
+      for(i = 0 ; i <= 11 ; i++)  
+      alert(fruits[i])
+
+    })
+
+
     // your code here
 })();

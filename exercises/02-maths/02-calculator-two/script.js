@@ -10,10 +10,42 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
-
+   
+   /*  var addition = document.getElementById(addition)
+    var substraction = document.getElementById(substraction)
+    var multiplication = document.getElementById(multiplication)
+    var division = document.getElementById(division) */
     const performOperation = operation => {
-        // perform the operation
+        var chiffre1 = parseInt(document.getElementById("op-one").value);
+        var chiffre2 = parseInt(document.getElementById("op-two").value);
+
+        switch(operation){
+
+            case "addition":
+                alert(chiffre1 + chiffre2)
+                break;
+            case "substraction":
+                alert(chiffre1 - chiffre2)
+                break;
+            case "multiplication":
+                alert(chiffre1 * chiffre2)
+                break;
+            case "division":
+                alert(chiffre1 / chiffre2)
+                break;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
@@ -21,5 +53,8 @@
             "click",
             () => (performOperation($btn.id), false),
         ),
+        
+        
+
     );
 })();

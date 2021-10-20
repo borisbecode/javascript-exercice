@@ -10,5 +10,46 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+
+    var button = document.getElementById("run")
+
+    button.addEventListener("click", function (date) {
+
+        var jour = document.getElementById("dob-day").value
+        var mois = document.getElementById("dob-month").value
+        var annee = document.getElementById("dob-year").value
+        var today = new Date();
+        var age = today.getFullYear() - annee;
+        if (today.getMonth()+1 < mois || (today.getMonth()+1 == mois && today.getDate() < jour)) {
+            age--;
+          }
+        
+        
+
+        alert(" vous avez " + age )
+
+
+
+        
+
+
+
+
+
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();
